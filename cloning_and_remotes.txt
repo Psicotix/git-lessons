@@ -1,0 +1,36 @@
+Cloning copies an existing repo. Copied entirely, including version history. 
+Keeps track of the repo remotes.
+
+$ git clone git@github.com:<username>/<repo>.git
+will make a copy in directory. No need to mkdir the directory first.
+
+Remote repositories:
+Copies of a repo elsewhere, on a network or the 'net.
+Allows collaboration.
+Remotes can be added or removed when needed.
+
+	1/ clone the repo.
+	2/ git remote = shows which remotes we are using.
+	3/ origin is the default remote.
+	4/ A new remote can be added with a new remote.
+	5/ git remote add <shortname> <url>
+	6/ We can update our local repo with files from the original remote or our new remote.
+	7/ git fetch origin or <name>
+
+This fetch is NOT merged!!
+	8/ git merge origin/master master or git merge <name>/master master
+This will merge the remote AFTER it's been fetched!
+
+Push will push changes to remote.
+Always use git status first. Then:
+
+$ git push <name of remote, eg:>origin <name of branch, eg:>master
+
+	9/ git remote show origin <shortname>
+	Shows the remote origin, including Fetch and Push URLs.
+	10/ git pull - an alias for git fetch && git merge origin master
+
+
+
+
+

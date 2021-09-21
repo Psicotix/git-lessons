@@ -1,0 +1,6 @@
+git log -<n> : limit the log output to last n commits
+git log -p : show patch introduced - like git diff
+git log --pretty=<format> : format each commit in a certain way, eg oneline, full or fuller
+git log --graph : show the commits with graph, best for branches.
+git log --since "2 months"
+git log --until "2 months" : limit output by date.

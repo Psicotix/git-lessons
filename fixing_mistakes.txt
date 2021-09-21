@@ -1,0 +1,11 @@
+ERRORS IN COMMIT
+if files have been forgotten or message incorrect.
+
+to add files to an existing commit:
+	1/ Add files to staging area with git add <filename>
+	2/ git commit --amend
+Previous commit message can be altered. Amending commits replaces original one, so history is forgotten.
+
+Entire commits can be entirely reverted.
+	1/ run git log to get identifier.
+	2/ git revert <unique_identifier>

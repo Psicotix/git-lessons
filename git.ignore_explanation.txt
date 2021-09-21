@@ -1,0 +1,12 @@
+* matches 0 or more characters.
+/<pattern> patterns are only matched in the same working directory as the .gitignore file
+<pattern>/ only matches folder names
+
+! negates pattern. eg: !TODO.log will exempt TODO.log from being ignored.
+/**/*<pattern> ** tells git to ignore anything in subdirectories.
+
+Examples
+*.log
+*.bin
+
+Comments can be added with # at start of line.

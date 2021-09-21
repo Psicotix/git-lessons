@@ -1,0 +1,9 @@
+commit to add files that are staged, by being added.
+
+$ git commit = will prepare file for commit.
+$ git commit -v = will show the results of current (git) diff in the message section. The diff will not be output in the message.
+$ git commit -m "message" = will allow the message to be input.
+$ git commit -a = add all modified files to staging area.
+
+"env" will show global default editor
+$ git config --global core.editor "nano"
