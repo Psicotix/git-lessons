@@ -1,0 +1,35 @@
+git branch command:
+Allows us to set up a new branch to work on without making changes to main or master branch.
+
+USAGE:
+$ git branch : with no parameters shows current working branch.
+
+$ git branch <new-branch> : creates a new branch with <new-branch> as name, as a commit.
+HEAD has not been moved to new branch yet!
+
+$ git checkout -b <new-branch> : does the same as branch new AND moves the HEAD to the new branch.
+
+
+To move HEAD, use:
+$ git checkout <new-branch>
+
+From here, our changes will be advancing the new branch, NOT the main branch.
+git checkout can be used to quickly change branches.
+e.g. $ git checkout main
+git log --graph shows divergence graphically.
+
+Merging branches:
+1/ $ git checkout main : return to the main branch
+2/ $ git merge <branch-we-want-to-merge-to-main>
+
+Once a change has been merged, delete the branch! :
+3/ $ git branch -d <branch-we-merged>
+
+IF we have another branch where other things are being worked on, we use 
+$ git merge <branch-to-merge> 
+again, and should then get a merge message because we have two 
+branches (main and branch-to-merge> that we need to commit. Uses recursive strategy.
+
+MERGE CONFLICTS
+
+
